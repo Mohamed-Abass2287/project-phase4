@@ -2,6 +2,7 @@ from flask import request, jsonify
 from models import User
 from app import db
 from flask_jwt_extended import create_access_token
+from flask_restx import Namespace
 
 ns = Namespace('auth', __name__, url_prefix='/auth')
 
